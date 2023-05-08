@@ -15,7 +15,7 @@ Because this project has achieved full-stack integration based on vite and vite-
 - Export your ip address and port in the environment by `export VITE_URL=http://you_public_ip_address:port`. Otherwise, it will use `localhost`
 - Run `npm run build` to build vite
 - Run `npm start` to start in production mode
-- By the wey, `npm run dev` is for development
+- By the way, `npm run dev` is for development
 
 
 ## Code Structure
