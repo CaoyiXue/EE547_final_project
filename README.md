@@ -10,7 +10,7 @@ This repo is EE547 final project. It provide platform to show and search 14000 g
 - React: Render the front web app
   
 ## Deployment
-Because this project has achieved full-stack integration based on vite and vite-express. Once install this repo, you can following the following simple steps to deploy it.
+Because this project has achieved full-stack integration based on vite and vite-express. Once install this repo, you can following the following simple steps to deploy it. Our website is [http://3.13.47.159:3001](http://3.13.47.159:3001)
 - Install node and node package
 - Export your ip address and port in the environment by `export VITE_URL=http://you_public_ip_address:port`. Otherwise, it will use `localhost`
 - Run `npm run build` to build vite
