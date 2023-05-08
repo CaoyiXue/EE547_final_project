@@ -11,10 +11,16 @@ This repo is EE547 final project. It provide platform to show and search 14000 g
   
 ## Deployment
 Because this project has achieved full-stack integration based on vite and vite-express. Once install this repo, you can following the following simple steps to deploy it. Our website is [Meet Game](http://3.13.47.159:3001)
-- Install node and node package
-- Export your ip address and port in the environment by `export VITE_URL=http://you_public_ip_address:port`. Otherwise, it will use `localhost`
-- Run `npm run build` to build vite
-- Run `npm start` to start in production mode
+- Method 1 (recommended for higer version node and run in background)
+  - Install docker
+  - Export your ip address and port in the environment by `export VITE_URL=http://you_public_ip_address:3001`. 
+  - Run `docker build -t meetgame .`
+  - Run `docker run -d -p 3001:3001 meetgame`
+- Method 2
+  - Install node and node package
+  - Export your ip address and port in the environment by `export VITE_URL=http://you_public_ip_address:port`. Otherwise, it will use `localhost`
+  - Run `npm run build` to build vite
+  - Run `npm start` to start in production mode
 - By the way, `npm run dev` is for development
 
 
