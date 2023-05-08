@@ -1,6 +1,6 @@
-import { HStack, Image, Link } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import { useRef } from "react";
-
+import { Link } from "react-router-dom";
 import reactLogo from "../assets/react.svg";
 import AuthStatus from "./AuthStatus";
 import SearchInput from "./SearchInput";
@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <>
-      <HStack justifyContent="space-between" padding="10px 70px 10px 25px">
+      <HStack padding="10px">
         <Link to="/">
           <Image src={reactLogo} boxSize="60px" />
         </Link>

@@ -1,8 +1,10 @@
 import { Card, CardBody, HStack, Heading, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import getCroppedImageUrl from "../services/cropImage.js";
 import CriticScore from "./CriticScore";
 import Emoji from "./Emoji";
 import PlatformIconList from "./PlatformIconList";
+
 const GameCard = ({ game }) => {
   return (
     <Card>
@@ -14,9 +16,8 @@ const GameCard = ({ game }) => {
         </HStack>
 
         <Heading fontSize="2xl">
-          {game.name}
           <Emoji rating={game.rating_top} />
-          {/* <Link to={"/games/" + game.slug}>{game.name}</Link> */}
+          <Link to={"/games/" + game.slug}>{game.name}</Link>
         </Heading>
       </CardBody>
     </Card>
