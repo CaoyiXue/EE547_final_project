@@ -1,4 +1,5 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
+import VITE_URL from "../../env";
 
 const cache = new InMemoryCache({
   typePolicies: {
@@ -19,11 +20,8 @@ const cache = new InMemoryCache({
     },
   },
 });
-const uri = import.meta.env?.VITE_URL
-  ? `${import.meta.env?.VITE_URL}/graphql`
-  : "http://localhost:3001/graphql";
-console.log(import.meta.env.BASE_URL);
-console.log(import.meta.env);
+const uri = VITE_URL ? `${VITE_URL}/graphql` : "http://localhost:3001/graphql";
+
 const apolloClient = new ApolloClient({
   uri,
   cache,

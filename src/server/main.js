@@ -11,6 +11,7 @@ import neo4j from "neo4j-driver";
 import ViteExpress from "vite-express";
 import __dirname from "./dirname.js";
 import resolvers from "./resolvers.js";
+import VITE_URL from "../env.js";
 
 const typeDefs = readFileSync(`${__dirname}/schema.graphql`, "utf-8");
 const driver = neo4j.driver(
@@ -29,7 +30,7 @@ const server = new ApolloServer({
 await server.start();
 
 app.use("/graphql", cors(), bodyParser.json(), expressMiddleware(server));
-const url = process.env.VITE_URL || "http://localhost:3001";
+const url = VITE_URL || "http://localhost:3001";
 const port = url.split(":").pop();
 
 httpServer.listen({ port }, () => console.log(`🚀 Server ready at ${url}`));

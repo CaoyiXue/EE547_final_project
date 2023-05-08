@@ -16,14 +16,16 @@ Because this project has achieved full-stack integration based on vite and vite-
 
 - Method 1 (recommended since it has higer version node and can run in background) 
   - Install docker
+  - Modify your ip address and port in the (src/env.js)[src/env.js].
   - Run `docker build -t meetgame ./`
   - Run `docker run -d -p 3001:3001 -e VITE_URL=http://you_public_ip_address:3001 meetgame`
-  - 
+  
 - Method 2
   - Install node and node package
-  - Export your ip address and port in the environment by `export VITE_URL=http://you_public_ip_address:port`. Otherwise, it will use `localhost`
+  - Modify your ip address and port in the (src/env.js)[src/env.js].
   - Run `npm run build` to build vite
   - Run `npm start` to start in production mode
+  - 
 - By the way, `npm run dev` is for development
 
 
