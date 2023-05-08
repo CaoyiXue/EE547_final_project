@@ -19,7 +19,7 @@ Because this project has achieved full-stack integration based on vite and vite-
 
 
 ## Code Structure
-- [prepareData](prepareData) folder contains codes which draw image information from [RAWG](https://rawg.io/). 
+- [prepareData](prepareData) folder contains codes which draw image information from [RAWG](https://rawg.io/) by its REST API. 
 - Under [src](src) folder:
   - [client](src/client/) contains react web app code, which is organized accoding to different components
   - [server](src/server/) contains backend code
