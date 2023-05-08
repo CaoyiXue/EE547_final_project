@@ -1,5 +1,5 @@
 # EE547_final_project Meet Game
-This repo is EE547 final project. It provide platform to show and search 14000 games from RAWG database.
+This repo is EE547 final project. It provide platform to show and search 14000 games from [RAWG](https://rawg.io/) database, which has limited request time.
 
 ## Overall Architecture
 
@@ -22,3 +22,4 @@ Because this project has achieved full-stack integration based on vite and vite-
 Under [src](src) folder
 - [client](src/client/) contains react web app code, which is organized accoding to different components
 - [server](src/server/) contains backend code
+[prepareData](prepareDate) folder contains codes which draw image information from [RAWG](https://rawg.io/).
