@@ -29,7 +29,10 @@ const server = new ApolloServer({
 await server.start();
 
 app.use("/graphql", cors(), bodyParser.json(), expressMiddleware(server));
+const PORT = 3001;
 
-const url = import.meta.env?.URL || "http://localhost:3001";
-httpServer.listen({ port: 3001 }, console.log(`🚀 Server ready at ${url}`));
+httpServer.listen(
+  { port: PORT },
+  console.log(`🚀 Server ready at http://localhost:${PORT}`)
+);
 ViteExpress.bind(app, httpServer);
