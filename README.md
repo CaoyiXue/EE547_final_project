@@ -18,7 +18,7 @@ Because this project has achieved full-stack integration based on vite and vite-
   - Install docker
   - Modify your ip address and port in the (src/env.js)[src/env.js].
   - Run `docker build -t meetgame ./`
-  - Run `docker run -d -p 3001:3001 -e VITE_URL=http://you_public_ip_address:3001 meetgame`
+  - Run `docker run -d -p 3001:3001 meetgame`
   
 - Method 2
   - Install node and node package
