@@ -21,7 +21,7 @@ const cache = new InMemoryCache({
 });
 const uri = import.meta.env?.VITE_URL
   ? `${import.meta.env?.VITE_URL}/graphql`
-  : "http://localhost:3001/graphql";
+  : "http://3.13.47.159:3001/graphql";
 
 const apolloClient = new ApolloClient({
   uri,
